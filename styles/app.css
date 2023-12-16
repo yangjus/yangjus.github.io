@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+p a {
+  padding: 0;
+}
+
+/* Grouping selections */
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+/* Chaining selections */
+.read.unread {
+  color: white;
+}
+
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
