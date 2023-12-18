@@ -1,0 +1,45 @@
+#experience {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* #f26554; #02a6b9*/
+#experience article {
+    border: solid;
+    border-color: beige;
+    border-left-width: 0;
+    border-top-width: 0;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    box-shadow: 1rem 1rem #FF906B;
+    padding: 2.5rem;
+    box-shadow: 10px;
+    background-color: #FF906B;
+}
+
+#experience article h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#experience article h3 {
+    font-size: 1.5rem;
+}
+
+#experience * {
+    margin: 0;
+    padding: 0;
+}
+
+#experience article ul {
+    margin-left: 2rem;
+    list-style-type: "▶  ";
+}
+
+#experience article h3 a:hover {
+    color: black;
+    transform: scale(1.1);
+    display: inline-block;
+}

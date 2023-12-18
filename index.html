@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+    <script src="scripts.js"></script>
     <link rel="stylesheet" type="text/css" href="./styles/app.css">
     <link rel="stylesheet" type="text/css" href="./styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="./styles/experience.css">
+    <link rel="stylesheet" type="text/css" href="./styles/projects.css">
     <title>Justin's Website</title>
 </head>
 
@@ -19,54 +22,131 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
-    <!-- Landing Section -->
-    <div id="landing">
-        <h4>Hello! My name is</h4>
-        <h1>Justin Yang</h1>
-        <h2>an aspiring Full Stack Dev + ML enthusiast</h2>
-    </div>
-    <!-- About Me -->
-    <div id="about">
-        <h1>About Me</h1>
-        <p>
-            Hey! I'm Justin and I enjoy creating and exploring new things.
-            I currently reside in Ann Arbor where I attend the University of Michigan as an undergraduate junior.
-            I plan to graduate in Fall 2024, with a major in computer science + a minor in statistics, and look to find
-            a career in full stack development and/or machine learning.
-            I'm also interested in learning mobile dev and trying new fields on the side.
-        </p>
-        <p>
-            Outside of classes, I'm always trying to engage myself with new knowledge and tackle challenging projects.
-            Besides the personal software projects I set myself to (such as this website!), I'm also engaged in
-            statistics and analytics through my student-led 
-            <a href="https://www.wolverinesportsanalytics.com/" target="_blank" rel="noopener noreferrer">sports analytics club</a> on campus.
-            Recently I've done my first in-person 
-            <a href="https://www.linkedin.com/posts/justin-yang-2021_had-so-much-fun-at-mhacks-last-weekend-activity-7134331304363388929-b8uY?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">hackathon</a> 
-            and plan to hunt for more to attend! Furthermore, I'm diving deeper into
-            machine learning through research on conformal prediction with 
-            <a href="https://yashpatel5400.github.io/" target="_blank" rel="noopener noreferrer">Yash Patel</a>.
-        </p>
-        <p>
-            In my spare time, I can be found on the tennis courts, in the gym, or hanging out with friends.
-            Since college, I've picked up a lot of interests, such as snowboaring and playing the guitar.
-            I love board games, especially Settlers of Catan (sheep superiority!) and when I'm alone
-            I enjoy reading self-improvement books like Atomic Habits.
-        </p>
-    </div>
-    <!-- Work Experience -->
-    <div id="experience">
-        <h1>Work Experience</h1>
-    </div>
-    <!-- Projects -->
-    <div id="projects">
-        <h1>Projects</h1>
-    </div>
-    <!-- Contact Me -->
-    <div id="contact">
-        <h1>Contact Me</h1>
-    </div>
+    <main>
+        <!-- Landing Section -->
+        <section id="landing">
+            <h4>Hello! My name is</h4>
+            <h1>Justin Yang</h1>
+            <h2>an aspiring Full Stack Dev + ML enthusiast</h2>
+        </section>
+        <!-- About Me -->
+        <section id="about">
+            <h1>About Me</h1>
+            <p>
+                Hey! I'm Justin and I enjoy creating and exploring new things.
+                I currently reside in Ann Arbor where I attend the University of Michigan as an undergraduate junior.
+                I plan to graduate in Fall 2024, with a major in computer science + a minor in statistics, and look to
+                find
+                a career in full stack development and/or machine learning.
+                I'm also interested in learning mobile dev and trying new fields on the side.
+            </p>
+            <p>
+                Outside of classes, I'm always trying to engage myself with new knowledge and tackle challenging
+                projects.
+                Besides the personal software projects I set myself to (such as this website!), I'm also engaged in
+                statistics and analytics through my student-led
+                <a href="https://www.wolverinesportsanalytics.com/" target="_blank" rel="noopener noreferrer">sports
+                    analytics club</a> on campus.
+                Recently I've done my first in-person
+                <a href="https://www.linkedin.com/posts/justin-yang-2021_had-so-much-fun-at-mhacks-last-weekend-activity-7134331304363388929-b8uY?utm_source=share&utm_medium=member_desktop"
+                    target="_blank" rel="noopener noreferrer">hackathon</a>
+                and plan to hunt for more to attend! Furthermore, I'm diving deeper into
+                machine learning through research on conformal prediction with
+                <a href="https://yashpatel5400.github.io/" target="_blank" rel="noopener noreferrer">Yash Patel</a>.
+            </p>
+            <p>
+                In my spare time, I can be found on the tennis courts, in the gym, or hanging out with friends.
+                Since college, I've picked up a lot of interests, such as snowboaring and playing the guitar.
+                I love board games, especially Settlers of Catan (sheep superiority!) and when I'm alone
+                I enjoy reading self-improvement books like Atomic Habits.
+            </p>
+        </section>
+        <!-- Work Experience -->
+        <section id="experience">
+            <h1>Work Experience</h1>
+            <article>
+                <h3>
+                    Student Software Engineer - <a href="https://www.riotgames.com/en" target="_blank" rel="noopener noreferrer">Riot Games</a>
+                </h3>
+                <h4>
+                    Remote &#x25C8; January - December 2023 
+                </h4>
+                <ul>
+                    <li>
+                        Design and develop an extensible monitoring system to provide Security Engineers with
+                        real-time notifications for vulnerabilities in internal networks, flagging non-adherent
+                        items (e.g. firewall policy drift) via automated rule scripts
+                    </li>
+                    <li>
+                        Created Python script to aggregate security rules and flags metrics from database for
+                        dashboard API endpoint
+                    </li>
+                    <li>
+                        Built UI to display metrics dashboard, flags, rules, with Figma, React, Typescript, Material
+                        UI, Slack API webhook
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>
+                    Software Engineer Intern - <a href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer">Capital One</a>
+                </h3>
+                <h4>
+                    Plano, TX &#x25C8; June - August 2023
+                </h4>
+                <ul>
+                    <li>
+                        Streamlined event routing by handling AWS EventBridge events (1000+ events/day) and posting
+                        failed REST events to a SQS DLQ, integrated with an external event gateway to process and
+                        enrich external API payment events in real-time
+                    </li>
+                    <li>
+                        Ensured 100% code coverage for AWS Lambda’s SQS event files through Python unit tests
+                    </li>
+                    <li>
+                        Configured and deployed AWS components for dev, QA, perf, and prod environments using
+                        internal YAML-based files, ensuring seamless application deployment and frictionless CI/CD
+                        pipelines
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h3>
+                    Software Engineer Intern - <a href="https://fama.io/" target="_blank" rel="noopener noreferrer">Fama Technologies</a>
+                </h3>
+                <h4>
+                    Remote &#x25C8; June - August 2022
+                </h4>
+                <ul>
+                    <li>
+                        Built an internal user management system to handle the view, creation, assignment, and removal
+                        of users, roles, and permissions (RBAC) using NextJS framework, Typescript, and Tailwind CSS for
+                        user interface and NodeJS for server-side API calls to Auth0's Management API
+                    </li>
+                    <li>
+                        Engaged in Kanban agile methodology using Trello, contributing to story grooming, standups, and
+                        sprint retrospectives
+                    </li>
+                    <li>
+                        Created extensive documentation on the user management application project with Confluence
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!-- Projects -->
+        <section id="projects">
+            <h1>Projects</h1>
+            <article>
+
+            </article>
+        </section>
+        <!-- Contact Me -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+        </section>
+    </main>
     <footer>
-        <p>Designed & Built with pure HTML and CSS.</p>
+        <p>Designed & Built with vanilla HTML, CSS, and JS - a no framework approach.</p>
     </footer>
 </body>
 

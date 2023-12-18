@@ -1,36 +1,54 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
+/* 
+Color Palette: 
+beige, coral (#FF906B), moonstone (#47B2BE), darkgray (#121212)
+*/
 * {
   font-family: "Poppins", sans-serif;
-  padding: 0.5rem;
+  scroll-behavior: smooth;
+  color: #121212; 
+}
+
+body {
+  background-color: beige;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Change the width for smaller screens */
+@media (min-width: 1024px) {
+  main {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
+  font-size: 100%;
 }
 
 p a {
   padding: 0;
 }
 
-/* Grouping selections */
-.read,
-.unread {
-  color: white;
-  background-color: black;
-}
-
-/* Chaining selections */
-.read.unread {
-  color: white;
-}
-
-.read {
-  /* several unique declarations */
-}
-
-.unread {
-  /* several unique declarations */
+footer {
+  padding: 2rem;
+  text-align: center;
 }
