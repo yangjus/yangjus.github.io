@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 /* #f26554; #02a6b9*/
@@ -17,6 +17,10 @@
     padding: 2.5rem;
     box-shadow: 10px;
     background-color: #FF906B;
+}
+
+#experience article:hover {
+    transform: scale(1.05);
 }
 
 #experience article h4 {

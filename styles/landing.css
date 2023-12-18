@@ -1,0 +1,13 @@
+#landing h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#landing h2 {
+    font-size: 2rem;
+}
+
+#landing h3 {
+    font-size: 1.5rem;
+}
