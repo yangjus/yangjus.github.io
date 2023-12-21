@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: clamp(32px, 2rem, 3rem);
 }
 
 main {
@@ -25,7 +25,7 @@ main {
 }
 
 /* Change the width for smaller screens */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   main {
     padding-left: 20%;
     padding-right: 20%;
@@ -40,7 +40,6 @@ a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
-  font-size: 100%;
 }
 
 p a {

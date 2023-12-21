@@ -12,10 +12,15 @@ nav {
 nav a {
     margin-left: 1rem;
     margin-right: 1rem;
+    font-size: clamp(16px, 1.5rem, 32px)
 }
 
 nav a:hover {
     color: black;
     transform: scale(1.2);
     display: inline-block;
+}
+
+nav div {
+    font-size: clamp(16px, 1.5rem, 32px)
 }
