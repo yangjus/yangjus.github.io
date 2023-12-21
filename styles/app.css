@@ -7,7 +7,7 @@ beige, coral (#FF906B), moonstone (#47B2BE), darkgray (#121212)
 * {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color: #121212; 
+  color: #121212;
 }
 
 body {
@@ -24,11 +24,10 @@ main {
   padding-right: 10%;
 }
 
-/* Change the width for smaller screens */
 @media (min-width: 1200px) {
   main {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -44,6 +43,16 @@ a {
 
 p a {
   padding: 0;
+}
+
+.circle {
+  background: #FF906B;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
 }
 
 footer {

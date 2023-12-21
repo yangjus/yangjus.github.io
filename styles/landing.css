@@ -1,5 +1,21 @@
 #landing {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 0;
+    min-height: 75vh;
+}
+
+@media (max-width: 1200px) {
+    #landing {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    #landing .text {
+        text-align: center;
+    }
 }
 
 #landing h1 {
@@ -16,6 +32,20 @@
 #landing h3 {
     font-size: clamp(32px, 2rem, 2rem);
     margin: 0;
+}
+
+#landing .text {
+    display: inline-block;
+}
+
+#landing .headshot {
+    border-radius: 20;
+}
+
+#landing img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
 }
 
 .type {

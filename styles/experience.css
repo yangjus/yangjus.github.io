@@ -39,7 +39,11 @@
 
 #experience article ul {
     margin-left: 2rem;
-    list-style-type: "▶  ";
+    list-style-type: "▷  ";
+}
+
+#experience article li {
+    margin-bottom: 1rem;
 }
 
 #experience article h3 a:hover {
