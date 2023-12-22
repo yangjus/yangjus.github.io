@@ -9,12 +9,9 @@
 #experience article {
     border: solid;
     border-color: beige;
-    border-left-width: 0;
-    border-top-width: 0;
-    border-right-width: 4px;
-    border-bottom-width: 4px;
+    border-width: 0 4px 4px 0;
     box-shadow: 1rem 1rem #FF906B;
-    padding: 2.5rem;
+    padding: 3rem;
     box-shadow: 10px;
     background-color: #FF906B;
 }
@@ -24,8 +21,7 @@
 }
 
 #experience article h4 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 #experience article h3 {
@@ -39,7 +35,7 @@
 
 #experience article ul {
     margin-left: 2rem;
-    list-style-type: "▷  ";
+    list-style-type: "▷ ";
 }
 
 #experience article li {

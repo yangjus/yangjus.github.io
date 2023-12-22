@@ -21,8 +21,7 @@
 
 #landing h1 {
     font-size: clamp(64px, 4rem, 4rem);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 #landing h2 {

@@ -8,8 +8,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -21,4 +20,24 @@
 #dev {
     position: relative;
     left: 4px;
+}
+
+#about .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    text-align: left;
+    font-size: clamp(20px, 1rem, 1rem);
+}
+
+@media (max-width: 1024px) {
+    #about .skills {
+        justify-content: space-between;
+    }
+}
+
+#about .skills ul {
+    list-style: none;
+    padding: 0;
 }
