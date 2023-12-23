@@ -3,8 +3,8 @@
     justify-content: space-between;
     gap: 2rem;
     align-items: center;
-    padding-top: 0;
     min-height: 75vh;
+    padding-top: 0;
 }
 
 @media (max-width: 1200px) {

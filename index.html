@@ -3,20 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./styles/app.css">
     <link rel="stylesheet" type="text/css" href="./styles/nav.css">
     <link rel="stylesheet" type="text/css" href="./styles/landing.css">
     <link rel="stylesheet" type="text/css" href="./styles/about.css">
     <link rel="stylesheet" type="text/css" href="./styles/experience.css">
     <link rel="stylesheet" type="text/css" href="./styles/projects.css">
+    <link rel="stylesheet" type="text/css" href="./styles/contact.css">
     <title>Justin's Website</title>
 </head>
 
 <body>
     <!-- Navigation Bar -->
+    <div class="#top"></div>
     <nav>
-        <a href="https://yangjus.github.io/" target="_blank" rel="noopener noreferrer">Justin Yang</a>
+        <a href="#top">Justin Yang</a>
         <div>
             <a href="#about">About</a> |
             <a href="#experience">Experience</a> |
@@ -194,14 +197,190 @@
         </section>
         <!-- Projects -->
         <section id="projects">
-            <h1>Projects</h1>
-            <article>
-
-            </article>
+            <h1>Featured Projects</h1>
+            <div class="container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./images/projects/zenstock.PNG" alt="ZenStock">
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h2>ZenStock</h2>
+                                <p>
+                                    I created a stock investor web platform with my team at MHacks 16 hackathon.
+                                    The application utilizes NLP through Hugging Face, experimenting with different
+                                    financial sentimental analysis models.
+                                    Our inspiration for the project idea is a combination of Acorn and Robinhood, where
+                                    a user without investing experience can start their investment journey through our
+                                    stock recommending system. It won 3rd place for best Financial Hack.
+                                    <a href="https://devpost.com/software/zenstock" target="_blank"
+                                        rel="noopener noreferrer">Devpost Submission</a> &
+                                    <a href="https://github.com/yangjus/zen-stock" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>
+                                </p>
+                                <div class="tag">ReactJS</div>
+                                <div class="tag">Hugging Face (NLP)</div>
+                                <div class="tag">Python</div>
+                                <div class="tag">Pytorch</div>
+                                <div class="tag">MaterialUI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./images/projects/personal-website.PNG" alt="Personal Website">
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h2>Personal Website</h2>
+                                <p>
+                                    Over the 2023 winter break I worked on building this project and its entirety.
+                                    I focused on challenging myself to learn the fundamentals of HTML and CSS by
+                                    using no supporting libraries or frameworks. This is the first iteration and
+                                    I plan to have improved or different designs in the future.
+                                    <a href="https://github.com/yangjus/yangjus.github.io" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>
+                                </p>
+                                <div class="tag">HTML5</div>
+                                <div class="tag">CSS3</div>
+                                <div class="tag">JavaScript</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./images/projects/smt-data-challenge.PNG" alt="SMT Data Challenge">
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h2>Can Stolen Base Decisions be Efficiently Simplified?</h2>
+                                <p>
+                                    Co-authored a paper for the 2023 SMT Data Challenge. I worked with a few members of
+                                    my sports analytics club over the 2023 summer to research insights on a game
+                                    situation
+                                    in baseball. Analyzed the impact of baseball catcher pop time, throw speed, and
+                                    runner leadoff
+                                    distance on successful stolen base runs for players to optimize their game decisions
+                                    over a dataset of 1 million
+                                    records using R (tidyverse) in Google Colab.
+                                    <a href="https://cdn.uconnectlabs.com/wp-content/uploads/sites/123/2023/03/SMT-Data-Challenge-2023-fkyer-2.0.pdf"
+                                        target="_blank" rel="noopener noreferrer">Contest Specifications</a> &
+                                    <a href="https://github.com/yangjus/smt-data-challenge-2023" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>
+                                </p>
+                                <div class="tag">R (tidyverse)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./images/projects/mgo-trading.PNG" alt="MonopolyGO! Trading">
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h2>MonopolyGO! Trading</h2>
+                                <p>
+                                    In spring of 2023 I created a sticker trading platform for the popular
+                                    mobile game MonopolyGO!. The platform finds the best trade matches between users. My
+                                    inspiration came from playing
+                                    the game myself, since I often felt frustrated with the current trading methods
+                                    and wanted to make a stress-free, automated process. I'm continuing to maintain &
+                                    update the website, which has
+                                    garnered over 730+ registrations.
+                                    <a href="https://www.mgo-trading.com/" target="_blank"
+                                        rel="noopener noreferrer">Website</a> &
+                                    <a href="https://github.com/yangjus/monopoly-go" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>
+                                </p>
+                                <div class="tag">NextJS</div>
+                                <div class="tag">TypeScript</div>
+                                <div class="tag">TailwindCSS</div>
+                                <div class="tag">MaterialUI</div>
+                                <div class="tag">MongoDB</div>
+                                <div class="tag">Mongoose</div>
+                                <div class="tag">AWS Amplify</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./images/projects/shop-crunch.PNG" alt="ShopCrunch">
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h2>ShopCrunch</h2>
+                                <p>
+                                    Built a simple e-commerce website in the Forge Launch bootcamp program.
+                                    Features a chatbot, online payment via Stripe API, and a products filter.
+                                    <a href="https://github.com/yangjus/shopcrunch-ecommerce" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>
+                                </p>
+                                <div class="tag">ReactJS</div>
+                                <div class="tag">Firebase</div>
+                                <div class="tag">ExpressJS</div>
+                                <div class="tag">Heroku</div>
+                                <div class="tag">MaterialUI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./images/projects/michigan-hockey.jpg" alt="Michigan Men's Hockey">
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h2>Analyzing Penalty Calls on Michigan Hockey Players</h2>
+                                <p>
+                                    I worked with the analytics department in the Men's Michigan Hockey team
+                                    to draw insights into potentially unfair penalty calls and biased referees
+                                    against Michigan players. Penalty and referee data since 2014 were scraped
+                                    from boxsheets online and visualized using Tableau software.
+                                    <a href="https://www.wolverinesportsanalytics.com/projects/michigan-hockey"
+                                        target="_blank" rel="noopener noreferrer">More Info (old)</a>
+                                </p>
+                                <div class="tag">Python</div>
+                                <div class="tag">BeautifulSoup</div>
+                                <div class="tag">SQL</div>
+                                <div class="tag">Tableau</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- Contact Me -->
         <section id="contact">
-            <h1>Contact Me</h1>
+            <h1>Get In Touch</h1>
+            <div>
+                <p>
+                    If you have a question or just want to say hi, feel free to
+                    email me, I'll try my best to get back to you!
+                </p>
+                <form id="contact-form">
+                    <!-- Name -->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..." required />
+                    <!-- Email -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+                    <!-- Message -->
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Your message..." required></textarea>
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
         </section>
     </main>
     <footer>
