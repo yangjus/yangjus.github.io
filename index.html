@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="scripts.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./styles/app.css">
     <link rel="stylesheet" type="text/css" href="./styles/nav.css">
     <link rel="stylesheet" type="text/css" href="./styles/landing.css">
@@ -36,7 +36,7 @@
                 <h2 class="type">aspiring Full Stack Dev + ML enthusiast</h2>
             </div>
             <div class="headshot">
-                <img src="./images/headshot.jpg" alt="headshot picture" width="600" height="400" />
+                <img src="./images/headshot.jpg" alt="headshot picture" width="600" height="400">
             </div>
         </section>
         <!-- About Me -->
@@ -44,15 +44,15 @@
             <h1>About Me</h1>
             <div class="container">
                 <div>
-                    <div class="circle"><img src="./images/development.svg" alt="dev icon" id="dev"></img></div>
+                    <div class="circle"><img src="./images/development.svg" alt="dev icon" id="dev"></div>
                     <h3>Development</h3>
                 </div>
                 <div>
-                    <div class="circle"><img src="./images/data.svg" alt="data model icon"></img></div>
+                    <div class="circle"><img src="./images/data.svg" alt="data model icon"></div>
                     <h3>Data</h3>
                 </div>
                 <div>
-                    <div class="circle"><img src="./images/fitness.svg" alt="fitness watch icon"></img></div>
+                    <div class="circle"><img src="./images/fitness.svg" alt="fitness watch icon"></div>
                     <h3>Fitness</h3>
                 </div>
             </div>
@@ -123,77 +123,83 @@
         <!-- Work Experience -->
         <section id="experience">
             <h1>Work Experience</h1>
-            <article>
-                <h3>
-                    Student Software Engineer - <a href="https://www.riotgames.com/en" target="_blank"
-                        rel="noopener noreferrer">Riot Games</a>
-                </h3>
-                <h4>
-                    Remote &#x25C8; January - December 2023
-                </h4>
-                <ul>
-                    <li>
-                        Design and develop an extensible monitoring system to provide Security Engineers with
-                        real-time notifications for vulnerabilities in internal networks, flagging non-adherent
-                        items (e.g. firewall policy drift) via automated rule scripts
-                    </li>
-                    <li>
-                        Created Python script to aggregate security rules and flags metrics from database for
-                        dashboard API endpoint
-                    </li>
-                    <li>
-                        Built UI to display metrics dashboard, flags, rules, with Figma, React, Typescript, Material
-                        UI, Slack API webhook
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>
-                    Software Engineer Intern - <a href="https://www.capitalone.com/" target="_blank"
-                        rel="noopener noreferrer">Capital One</a>
-                </h3>
-                <h4>
-                    Plano, TX &#x25C8; June - August 2023
-                </h4>
-                <ul>
-                    <li>
-                        Streamlined event routing by handling AWS EventBridge events (1000+ events/day) and posting
-                        failed REST events to a SQS DLQ, integrated with an external event gateway to process and
-                        enrich external API payment events in real-time
-                    </li>
-                    <li>
-                        Ensured 100% code coverage for AWS Lambda’s SQS event files through Python unit tests
-                    </li>
-                    <li>
-                        Configured and deployed AWS components for dev, QA, perf, and prod environments using
-                        internal YAML-based files, ensuring seamless application deployment and frictionless CI/CD
-                        pipelines
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>
-                    Software Engineer Intern - <a href="https://fama.io/" target="_blank" rel="noopener noreferrer">Fama
-                        Technologies</a>
-                </h3>
-                <h4>
-                    Remote &#x25C8; June - August 2022
-                </h4>
-                <ul>
-                    <li>
-                        Built an internal user management system to handle the view, creation, assignment, and removal
-                        of users, roles, and permissions (RBAC) using NextJS framework, Typescript, and Tailwind CSS for
-                        user interface and NodeJS for server-side API calls to Auth0's Management API
-                    </li>
-                    <li>
-                        Engaged in Kanban agile methodology using Trello, contributing to story grooming, standups, and
-                        sprint retrospectives
-                    </li>
-                    <li>
-                        Created extensive documentation on the user management application project with Confluence
-                    </li>
-                </ul>
-            </article>
+            <div>
+                <article>
+                    <h3>
+                        Student Software Engineer - <a href="https://www.riotgames.com/en" target="_blank"
+                            rel="noopener noreferrer">Riot Games</a>
+                    </h3>
+                    <h4>
+                        Remote &#x25C8; January - December 2023
+                    </h4>
+                    <ul>
+                        <li>
+                            Design and develop an extensible monitoring system to provide Security Engineers with
+                            real-time notifications for vulnerabilities in internal networks, flagging non-adherent
+                            items (e.g. firewall policy drift) via automated rule scripts
+                        </li>
+                        <li>
+                            Created Python script to aggregate security rules and flags metrics from database for
+                            dashboard API endpoint
+                        </li>
+                        <li>
+                            Built UI to display metrics dashboard, flags, rules, with Figma, React, Typescript, Material
+                            UI, Slack API webhook
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>
+                        Software Engineer Intern - <a href="https://www.capitalone.com/" target="_blank"
+                            rel="noopener noreferrer">Capital One</a>
+                    </h3>
+                    <h4>
+                        Plano, TX &#x25C8; June - August 2023
+                    </h4>
+                    <ul>
+                        <li>
+                            Streamlined event routing by handling AWS EventBridge events (1000+ events/day) and posting
+                            failed REST events to a SQS DLQ, integrated with an external event gateway to process and
+                            enrich external API payment events in real-time
+                        </li>
+                        <li>
+                            Ensured 100% code coverage for AWS Lambda’s SQS event files through Python unit tests
+                        </li>
+                        <li>
+                            Configured and deployed AWS components for dev, QA, perf, and prod environments using
+                            internal YAML-based files, ensuring seamless application deployment and frictionless CI/CD
+                            pipelines
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>
+                        Software Engineer Intern - <a href="https://fama.io/" target="_blank"
+                            rel="noopener noreferrer">Fama
+                            Technologies</a>
+                    </h3>
+                    <h4>
+                        Remote &#x25C8; June - August 2022
+                    </h4>
+                    <ul>
+                        <li>
+                            Built an internal user management system to handle the view, creation, assignment, and
+                            removal
+                            of users, roles, and permissions (RBAC) using NextJS framework, Typescript, and Tailwind CSS
+                            for
+                            user interface and NodeJS for server-side API calls to Auth0's Management API
+                        </li>
+                        <li>
+                            Engaged in Kanban agile methodology using Trello, contributing to story grooming, standups,
+                            and
+                            sprint retrospectives
+                        </li>
+                        <li>
+                            Created extensive documentation on the user management application project with Confluence
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </section>
         <!-- Projects -->
         <section id="projects">
@@ -370,10 +376,10 @@
                 <form id="contact-form">
                     <!-- Name -->
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..." required />
+                    <input type="text" id="name" name="name" placeholder="Your name..." required>
                     <!-- Email -->
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required />
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                     <!-- Message -->
                     <label for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Your message..." required></textarea>
@@ -384,7 +390,20 @@
         </section>
     </main>
     <footer>
+        <a href="https://www.linkedin.com/in/justin-yang-2021/" target="_blank" rel="noopener noreferrer">
+            <img src="./images/linkedin.svg" alt="LinkedIn icon">
+        </a>
+        <a href="https://github.com/yangjus" target="_blank" rel="noopener noreferrer">
+            <img src="./images/github.svg" alt="GitHub icon">
+        </a>
+        <a href="https://medium.com/@justiny_2013" target="_blank" rel="noopener noreferrer">
+            <img src="./images/medium.svg" alt="Medium icon">
+        </a>
+        <a href="https://www.instagram.com/justin.eyy/" target="_blank" rel="noopener noreferrer">
+            <img src="./images/instagram.svg" alt="Instagram icon">
+        </a>
         <p>Designed & Built with vanilla HTML, CSS, and JS - a no framework approach.</p>
+        <p>© Justin Yang 2024</p>
     </footer>
 </body>
 

@@ -1,8 +1,12 @@
-#experience {
+#experience div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 3rem;
+}
+
+#experience h1 {
+    margin-bottom: 3rem;
 }
 
 /* #f26554; #02a6b9*/

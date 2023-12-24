@@ -44,6 +44,16 @@ section {
   transition: opacity 1s ease;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -70,12 +80,16 @@ footer {
   margin-top: 10rem;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
+footer img {
+  width: 4rem;
+  height: 4rem;
+  padding: 0 1rem;
+  color: #FF906B;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
 
-  to {
-    opacity: 1;
-  }
+footer img:hover {
+  top: -1rem;
 }
