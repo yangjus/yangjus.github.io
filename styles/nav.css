@@ -12,7 +12,9 @@ nav {
 
 nav a {
     margin: 0 0.5rem;
-    font-size: clamp(16px, 1.5rem, 24px)
+    font-size: clamp(16px, 1.5rem, 24px);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
